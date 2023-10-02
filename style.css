@@ -17,6 +17,7 @@ body{
     justify-content: space-between;
     padding: 38px;
     background-image: url(./IMAGE/20230916_101054.jpg);
+    background-repeat: no-repeat;
     height: 200vh; 
     margin-bottom: 100px;
     position: relative;
