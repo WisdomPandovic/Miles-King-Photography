@@ -8,6 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+
+
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
     <title>MILES KING PHOTOGRAPHY/about</title>
 
 </head>
@@ -126,8 +135,60 @@
 
     <div class="title">MILES KING PHOTOGRAPHY</div>
         
-        <div class="title-button"><button>BOOK NOW</button></div>
-
+    <div class="title-button"><button onclick="showForm()">BOOK NOW</button></div>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup-form" id="popup-form">
+        <h1>Session Booking</h1>
+        <form action="submit_booking.php" method="post">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+    
+            <label for="session_type">Session Type:</label>
+            <input type="text" id="session_type" name="session_type" required><br><br>
+    
+            <label for="date_time">Preferred Date and Time:</label>
+            <input type="datetime-local" id="date_time" name="date_time" required><br><br>
+    
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required><br><br>
+    
+            <label for="duration">Duration:</label>
+            <input type="text" id="duration" name="duration" required><br><br>
+    
+            <label for="specific_requests">Specific Requests or Themes:</label>
+            <textarea id="specific_requests" name="specific_requests"></textarea><br><br>
+    
+            <label for="participants">Number of Participants:</label>
+            <input type="number" id="participants" name="participants" min="1"><br><br>
+    
+            <label for="wardrobe_props">Wardrobe and Props:</label>
+            <textarea id="wardrobe_props" name="wardrobe_props"></textarea><br><br>
+    
+            <label for="style">Photography Style:</label>
+            <input type="text" id="style" name="style" required><br><br>
+    
+            <label for="requirements">Special Requirements:</label>
+            <textarea id="requirements" name="requirements"></textarea><br><br>
+    
+            <label for="usage_rights">Usage Rights and Permissions:</label>
+            <textarea id="usage_rights" name="usage_rights" required></textarea><br><br>
+    
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required><br><br>
+    
+            <label for="cancellation_policy">Cancellation Policy:</label>
+            <textarea id="cancellation_policy" name="cancellation_policy" required></textarea><br><br>
+    
+            <input type="submit" value="Submit">
+            <button type="button" onclick="closeForm()">Cancel</button>
+        </form>
+</div>
     <div class="container">
         <div class="content-wrapper-bg">
 
@@ -198,13 +259,114 @@
         </div>
     </div>
 
-    <div class="wdth-60">
-        <div class="portfolio-items-wrapper">
-
+    <div class="content-wrapper">
+        <div class="headingstyle-subtitle about-msg">
+            <p>"Photography is not just an art form; it's a journey of discovering the extraordinary within the ordinary."
+            </p>
         </div>
     </div>
 
+    <div class="content-wrapper  red">
+        <div class="">
+           
+            <div class="grid">
+                <div>
+                   <i class="fa fa-camera" style="font-size:70px"></i>
+                   <h1>2937</h1>
+                    <h4>Photo Sessions</h4>
+                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. 
+                        Cras mattis consectetur purus sit amet fermentum.
+                    </p>
+                </div>
+                <div>
+                    <!-- <i class="fa fa-bell-o" style="font-size:70px"></i> -->
+                    <!-- <i class="fa fa-video-camera" style="font-size:70px"></i>  -->
+                    <i class="fa fa-plane" style="font-size:70px"></i>
+                    <h1>2937</h1>
+                    <h4>Occassions</h4>
+                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. 
+                        Cras mattis consectetur purus sit amet fermentum.
+                    </p>
+                </div>
 
+                <div>
+                    <i class="fa fa-video-camera" style="font-size:70px"></i> 
+                    <h1>2937</h1>
+                    <h4>Coverage</h4>
+                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. 
+                        Cras mattis consectetur purus sit amet fermentum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell"><img src="./IMAGE/54512646_2152846144797064_2471573867558769193_n.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="./IMAGE/120202602_698247124374727_2314086191294679795_n.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="./IMAGE/121833298_213104726822884_7453970812371187192_n.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="./IMAGE/310737975_149339104462613_2437076959320009133_n.webp.jpg" alt=""></div>
+        <div class="carousel-cell"><img src="./IMAGE/Angel_2172LR.jpg" alt=""></div>
+   </div>
+
+   <div class="content-wrapper">
+    <div class="txt-center">
+        <p>Customers Reviews
+        </p>
+    </div>
+</div>
+
+<section class="container1">
+    <div class="testimonial mySwiper">
+      <div class="testi-content swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="./IMAGE/Angel_2172LR.jpg" alt="" class="image" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+            saepe provident dolorem a quaerat quo error facere nihil deleniti
+            eligendi ipsum adipisci, fugit, architecto amet asperiores
+            doloremque deserunt eum nemo.
+          </p>
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+          <div class="details">
+            <span class="name">Gold Paul</span>
+            <span class="job">Beautician</span>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="./IMAGE/54512646_2152846144797064_2471573867558769193_n.jpg" alt="" class="image" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+            saepe provident dolorem a quaerat quo error facere nihil deleniti
+            eligendi ipsum adipisci, fugit, architecto amet asperiores
+            doloremque deserunt eum nemo.
+          </p>
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+          <div class="details">
+            <span class="name">Fatosin</span>
+            <span class="job">Hair Stylist</span>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="./IMAGE/310737975_149339104462613_2437076959320009133_n.webp.jpg" alt="" class="image" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+            saepe provident dolorem a quaerat quo error facere nihil deleniti
+            eligendi ipsum adipisci, fugit, architecto amet asperiores
+            doloremque deserunt eum nemo.
+          </p>
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+          <div class="details">
+            <span class="name">Ariana</span>
+            <span class="job">Model</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
     <footer>  <h5>  &copy; <span id="date"></span>, MILES KING PHOTOGRAPHY | All Right Reserved | Abuja</h5>
        
@@ -220,5 +382,26 @@
 
     
     <script src="main.js"></script>
+    <script src="popup.js"></script>
+    <script src="slide.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+        
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+    </script>
+</script>
 </body>
 </html>
