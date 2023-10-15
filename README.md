@@ -41,6 +41,9 @@ Fork the repository
 3. Push to the branch (git push origin feature/your-feature)
 4. Create a new pull request
 
+Live Demo
+[Live Demo](https://wisdompandovic.github.io/Miles-King-Photography/)
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
